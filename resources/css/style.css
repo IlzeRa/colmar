@@ -1,11 +1,13 @@
 body{
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  text-align: left;
 }
 
 html{
   font-size: 18px;
 }
+
  *{
   box-sizing: border-box;
  }
@@ -13,6 +15,17 @@ html{
 .container{
   width: 100%;
   display:flex;
+  justify-content: space-between;
+}
+
+h4{
+  font-size: 1.444rem;
+  line-height: 1.2;
+}
+
+h3{
+  font-size: 1.556rem;
+  line-height: 1.2;
 }
 
 /*Header*/
@@ -27,6 +40,9 @@ nav{
   justify-content: space-between;
   align-items: center;
   background-color: rgb(56, 72, 87);
+  border-bottom: 0.025rem solid rgba(9, 6, 0, 0.7);
+  position:fixed;
+  z-index: 1;
 }
 
 .logo{
@@ -36,23 +52,24 @@ nav{
   margin-left: 1.333rem;
   padding: 0.3888rem;
   border-radius: 0.2777rem;
-  color: rgba(15, 0, 0, 0.28);
+  color: rgb(177, 192, 205);
   font-weight: 700;
-  background-color: rgb(255, 255, 255);
+
 }
 
 .logo img{
   height: 1.777rem;
-}
+  }
+
 .logo p{
   text-transform: uppercase;
   font-size: 1rem;
   font-family:"Nanum Gothic", sans-serif;
   }
 
-  .logo span{
-    color: rgb(0,0,0);
-  }
+.logo span{
+  color: rgb(255, 255, 255);
+   }
 
 nav ul{
   margin-right: 1.333rem;
@@ -67,7 +84,7 @@ nav ul li:last-child{
 }
 
 nav a{
-  color: rgb(255, 255, 255);
+  color: rgb(253, 251, 247);
   text-decoration: none;
   text-transform:uppercase;
 }
@@ -84,28 +101,27 @@ color: rgb(152, 123, 51);
 #banner{
   background-color: rgb(56, 72, 87);
   width: 100%;
-}
+  position: relative;
+  top: 3.556rem;
+  }
 
 #banner .container{
-  width: 100%;
   height: 30.39rem;
-  display: flex;
-  justify-content: space-between;
 }
 
-#banner .container .visual{
+#banner .visual{
   background-image: url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin:1.778rem;
+  margin:1.778rem 1.334rem;
   width: 60%;
   height:auto;
 }
 
 #banner .text{
   width: 40%;
-  margin:1.778rem 2.93rem 1.778rem 0;
+  margin:1.778rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,17 +136,18 @@ color: rgb(152, 123, 51);
   align-items: flex-start;
   justify-content: center;
   text-align: left;
+  padding-left: 1.334rem;
 }
 
 #banner h1{
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.778rem;
   color: rgb(243, 233, 205);
+  line-height: 1.4;
 }
 
 #banner h4{
-  font-size: 1.444rem;
   margin-bottom: 1.778rem;
   color: rgb(243, 233, 205);
 }
@@ -140,7 +157,7 @@ color: rgb(152, 123, 51);
   border-radius: 0.2777rem;
   color: rgb(243, 233, 205);
   font-size: 1rem;
-  width: 19rem;
+  width: 17.6rem;
   height: 1.89rem;
   text-align: center;
   display: flex;
@@ -160,5 +177,148 @@ color: rgb(152, 123, 51);
 }
 
 #banner .btn:hover{
+  background-color: rgba(152, 123, 51, 0.30);
+}
+
+/*Main section*/
+section{
+  position: relative;
+  top: 3.556rem;
+}
+
+#news{
+  background-color: rgb(253, 251, 247);
+  width: 100%;
+  }
+
+#news .container{
+  height: 37rem;
+}
+
+#news .visual{
+  width: 60%;
+  height:auto;
+  margin:1.778rem 1.334rem;
+  display: flex;
+  flex-direction: column;
+
+  }
+
+#news .picture{
+  width: 100%;
+  height:60%;
+  background-image: url("../images/information-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+   }
+
+.quote{
+  width: 100%;
+  height: 40%;
+  margin-top: 1.778rem;
+  padding-right: 1.33rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+.quote h3{
+margin-bottom: 1.33rem;
+font-weight: 700;
+}
+
+#distance{
+position:relative;
+bottom: 2rem;
+}
+
+#news .text{
+  width: 40%;
+  border-left: 0.025rem solid rgba(9, 6, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+#news .item{
+  margin: 1.778rem 0;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+#news .aside{
+  background-color: rgb(177, 192, 205);
+  background-clip: content-box;
+  padding: 0.889rem 0 0.889rem 0.889rem;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  }
+
+#news .aside:hover{
+  background-color: rgb(110, 126, 160);
+}
+
+#news .image{
+  margin: 0.889rem;
+  width: 35%;
+  height: auto;
+}
+
+.one,
+.two,
+.three{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.one{
+  background-image: url("../images/information-orientation.jpg");
+    }
+
+.two{
+  background-image: url("../images/information-campus.jpg");
+    }
+
+.three{
+  background-image: url("../images/information-guest-lecture.jpg");
+}
+
+.column{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  }
+
+  .column h4{
+    margin-bottom: 0.444rem;
+    font-weight: 700;
+    color: rgb(50, 75, 119);
+}
+
+.column p{
+  margin-bottom: 0.444rem;
+  padding-right: 0.889rem;
+}
+
+.column a{
+  text-decoration: none;
+  background-color: rgb(152, 123, 51);
+  padding: 0.444rem;
+  color: rgb(243, 233, 205);
+}
+
+.column a:visited{
+  color: rgb(243, 233, 205);
+}
+
+.column a:hover{
   background-color: rgba(152, 123, 51, 0.30);
 }

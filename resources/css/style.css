@@ -21,11 +21,17 @@ html{
 h4{
   font-size: 1.444rem;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 h3{
   font-size: 1.556rem;
   line-height: 1.2;
+  font-weight: 700;
+}
+
+p{
+  line-height: 1.4;
 }
 
 /*Header*/
@@ -201,7 +207,6 @@ section{
   margin:1.778rem 1.334rem;
   display: flex;
   flex-direction: column;
-
   }
 
 #news .picture{
@@ -225,7 +230,6 @@ section{
 
 .quote h3{
 margin-bottom: 1.33rem;
-font-weight: 700;
 }
 
 #distance{
@@ -235,7 +239,6 @@ bottom: 2rem;
 
 #news .text{
   width: 40%;
-  border-left: 0.025rem solid rgba(9, 6, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -269,23 +272,23 @@ bottom: 2rem;
   height: auto;
 }
 
-.one,
-.two,
-.three{
+#news .one,
+#news .two,
+#news .three{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.one{
+#news .one{
   background-image: url("../images/information-orientation.jpg");
     }
 
-.two{
+#news .two{
   background-image: url("../images/information-campus.jpg");
     }
 
-.three{
+#news .three{
   background-image: url("../images/information-guest-lecture.jpg");
 }
 
@@ -299,7 +302,6 @@ bottom: 2rem;
 
   .column h4{
     margin-bottom: 0.444rem;
-    font-weight: 700;
     color: rgb(50, 75, 119);
 }
 
@@ -321,4 +323,123 @@ bottom: 2rem;
 
 .column a:hover{
   background-color: rgba(152, 123, 51, 0.30);
+}
+
+/*Learning sub-section*/
+#info{
+  width: 100%;
+  height: 59.44rem;
+  background-color: rgb(177, 192, 205);
+  position: relative;
+  }
+
+ #container-two{
+    width: 100%;
+    height:59.44rem;
+    padding: 1.778rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;;
+  }
+
+.block{
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row{
+  width: 100%;
+  height: 46%;
+  margin-bottom: 1.778rem;
+  display: flex;
+}
+
+.course{
+  height: 100%;
+  width: 33.333%;
+  margin: 1.778rem 1.778rem 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.course:hover{
+  background-color: rgb(110, 126, 160);
+  }
+
+.exception{
+  margin-right: 0;
+}
+
+#info .image{
+background-image: url("../images/course-software.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 45%;
+  }
+
+#info .one{
+  background-image: url("../images/course-software.jpg");
+}
+
+#info .two{
+  background-image: url("../images/course-computer-art.jpg");
+  }
+
+#info .three{
+  background-image: url("../images/course-design.jpg");
+}
+
+#info .four{
+  background-image: url("../images/course-data.jpg");
+}
+
+#info .five{
+  background-image: url("../images/course-business.jpg");
+}
+
+#info .six{
+  background-image: url("../images/course-marketing.jpg");
+}
+
+.description{
+  height: 55%;
+  width: 80%;
+  padding-left: 0.889rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.description h4{
+  margin: 0.889rem 0 0.444rem 0;
+  font-weight: 700;
+}
+
+.description span{
+  margin: 0.444rem 0;
+}
+
+.description p{
+  margin-bottom: 1.333rem;
+}
+
+/*Thesis sub-section*/
+#thesis{
+  width: 100%;
+  height: 44rem;
+  background-color: rgb(253, 251, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thesis h3{
+  margin: 1.778rem 0;
 }

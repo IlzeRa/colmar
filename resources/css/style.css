@@ -80,11 +80,20 @@ p{
   padding: 0 0 0.889rem 0.889rem;
   width: 100%;
   display: flex;
-  transition: color 3s linear 0.5s;
+  transition: all 350ms ease-out 150ms;
 }
 
 .aside:hover{
   background-color: rgb(110, 126, 160);
+  color: rgb(243, 233, 205);
+}
+
+.aside h4{
+   transition: all 350ms ease-out 150ms;
+}
+
+.aside:hover h4{
+    color: rgb(243, 233, 205);
 }
 
 .image{
@@ -125,8 +134,10 @@ p{
 .column a{
   text-decoration: none;
   background-color: rgb(152, 123, 51);
+  border-radius: 0.2778rem;
   padding: 0.444rem;
   color: rgb(243, 233, 205);
+  transition: background-color 350ms ease-out 150ms;
 }
 
 .column a:visited{
@@ -134,7 +145,7 @@ p{
 }
 
 .column a:hover{
-  background-color: rgba(152, 123, 51, 0.30);
+  background-color: rgb(56, 72, 87);
 }
 
 /*Header*/
@@ -194,6 +205,7 @@ nav a{
   color: 	rgb(255, 255, 255);
   text-decoration: none;
   text-transform:uppercase;
+  transition: all 750ms linear 200ms;
 }
 
 nav a:visited{
@@ -202,6 +214,7 @@ nav a:visited{
 
 nav a:hover{
 color: rgb(152, 123, 51);
+border-bottom: 0.2rem solid rgb(152, 123, 51);
 }
 
 /*Main banner*/
@@ -246,11 +259,7 @@ color: rgb(152, 123, 51);
   padding-left: 1.334rem;
 }
 
-#banner h1{
-  margin-bottom: 1.778rem;
-  color: rgb(243, 233, 205);
-}
-
+#banner h1,
 #banner h4{
   margin-bottom: 1.778rem;
   color: rgb(243, 233, 205);
@@ -266,6 +275,7 @@ color: rgb(152, 123, 51);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 350ms ease-out 150ms;
 }
 
 #banner .btn a{
@@ -276,12 +286,8 @@ color: rgb(152, 123, 51);
   color: rgb(243, 233, 205);
 }
 
-#banner .btn a:visited{
-  color: rgb(243, 233, 205);
-}
-
 #banner .btn:hover{
-  background-color: rgba(152, 123, 51, 0.30);
+  width: 18.5rem;
 }
 
 /*Main section*/
@@ -382,12 +388,18 @@ section{
   margin: 1.778rem 1.778rem 0 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(250, 250, 250);
+  transition: all 1s ease-out 500ms;
 }
 
 .course:hover{
   background-color: rgb(110, 126, 160);
   }
+
+.course:hover,
+.course:focus{
+  transform: scale(1.1);
+}
 
 .exception{
   margin-right: 0;

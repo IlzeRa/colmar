@@ -20,26 +20,30 @@ html{
 }
 
 h1{
-  font-size: 2rem;
+  font-size:calc(2rem - 0.5vw);
   font-weight: 700;
-  line-height: 1.4;
+  line-height: calc(1.4 -0.5vw);
 }
 
 h3{
-  font-size: 1.556rem;
-  line-height: 1.2;
+  font-size:calc(1.556rem - 0.5vw);
+  line-height: calc(1.2 - 0.5vw);
   font-weight: 700;
 }
 
 h4{
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-size: calc(1.2rem - 0.5vw);
+  line-height: calc(1.2 - 0.5vw);
   font-weight: 700;
 }
 
 p{
-  line-height: 1.4;
-  font-size: 1rem;
+  line-height: calc(1.4 - 0.5vw);
+  font-size: calc(1rem - 0.5vw);
+}
+
+a{
+  font-size: calc(1.2rem - 0.5vw);
 }
 
 .quote{
@@ -153,7 +157,7 @@ nav{
   align-items: center;
   background-color: rgb(56, 72, 87);
   border-bottom: 0.025rem solid rgba(9, 6, 0, 0.7);
-  position:fixed;
+  position: fixed;
   z-index: 1;
 }
 
@@ -162,8 +166,6 @@ nav{
   display: flex;
   align-items: center;
   margin-left: 1.333rem;
-  padding: 0.3888rem;
-  border-radius: 0.2777rem;
   color: rgb(177, 192, 205);
   font-weight: 700;
 }
@@ -184,6 +186,7 @@ nav{
 nav ul{
   margin-right: 1.333rem;
 }
+
 nav ul li{
   display: inline-block;
   padding-right: 0.8888rem;
@@ -196,7 +199,8 @@ nav ul li:last-child{
 nav a{
   color: 	rgb(255, 255, 255);
   text-decoration: none;
-  text-transform:uppercase;
+  text-transform: uppercase;
+
   transition: all 200ms linear 200ms;
 }
 
@@ -209,17 +213,24 @@ color: rgb(152, 123, 51);
 border-bottom: 0.2rem solid rgb(152, 123, 51);
 }
 
+@media only screen and (max-width: 1024px){
+  header{
+    max-width: 56.88rem;
+  }
+
+}
+
+
 /*Main banner*/
 #banner{
   background-color: rgb(56, 72, 87);
   width: 100%;
-  position: relative;
-  top: 3.556rem;
+  padding-top: 3.5556rem;
 }
 
 #banner .text{
   width: 40%;
-  margin:1.778rem 0;
+  margin:1.778rem 1.333rem 1.778rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -228,13 +239,11 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
 }
 
 #banner .size{
-  max-width: 19rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   text-align: left;
-  padding-left: 1.334rem;
 }
 
 #banner h1,
@@ -247,7 +256,7 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
   background-color: rgb(152, 123, 51);
   border-radius: 0.2777rem;
   color: rgb(243, 233, 205);
-  width: 17.6rem;
+  width: calc(17.6rem - 0.5vw);
   height: 1.89rem;
   text-align: center;
   display: flex;
@@ -269,8 +278,7 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
 }
 /*Main section*/
 main{
-  position: relative;
-  top: 3.556rem;
+  width: 100%;
 }
 
 #news{
@@ -359,8 +367,7 @@ main{
 #info{
   width: 100%;
   background-color: rgb(177, 192, 205);
-  position: relative;
-  }
+}
 
 #container-two{
   width: 100%;
@@ -499,8 +506,6 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
-  top:3.555rem;
   height: 5.3rem;
 }
 

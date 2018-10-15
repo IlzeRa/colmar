@@ -424,7 +424,7 @@ main{
     align-items: center;
   }
 
-  .mob {
+#news .mob {
     display: none;
   }
 
@@ -438,14 +438,7 @@ main{
   display: none;
 }
 
- .desk{
-  display: none;
-}
 
- .mob{
-  display:block;
-  max-width: 100%;
-  }
 
 #news .item{
   margin:0;
@@ -472,6 +465,15 @@ main{
   overflow: hidden;
   display: flex;
   }
+
+#news .desk{
+   display: none;
+ }
+
+  #news .mob{
+   display:block;
+   max-width: 100%;
+   }
 
 #news .column{
   padding: 1rem 1.778rem;
@@ -608,9 +610,20 @@ main{
 }
 
 .course{
-  margin:0;
+  margin:0 0 0.444rem 0;
   background-color: rgb(177, 192, 205);
 }
+
+
+.course h4:hover{
+
+  }
+
+.course h4:hover,
+.course h4:focus{
+  transform: scale(1);
+}
+*/
 
 #info h3{
   margin-bottom: 0.889rem;
@@ -621,12 +634,10 @@ main{
   padding: 0.889rem 0.889rem 1.333rem 0.889rem;
   font-size: 1rem;
   margin: 0;
+  border: 1px solid rgb(253, 251, 247);
 }
 
-#info .description{
-  margin-bottom: 0.444rem;
-  background-color: rgb(250,250,250);
-}
+
 
 /*Thesis sub-section*/
 #thesis{

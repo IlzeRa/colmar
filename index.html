@@ -14,7 +14,7 @@
   <body>
     <!--Header-->
     <header>
-      <nav>
+      <nav id="desktop">
         <div class="logo">
           <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo"/>
           <p><span>Colmar</span>Academy</p>
@@ -24,6 +24,15 @@
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
           <li><a href="#">Sign-in</a></li>
+        </ul>
+      </nav>
+
+      <nav id="mobile">
+        <ul>
+          <li><img src="./resources/images/ic-logo.svg" alt="Logo of the Colmar Academy"/>
+          <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Icon of campus"/></a></li>
+          <li><a href="#"><img src="./resources/images/ic-online.svg" alt="PC online icon"/></a></li>
+          <li><a href="#"><img src="./resources/images/ic-login.svg" alt="Login icon"/></a></li>
         </ul>
       </nav>
 
@@ -50,7 +59,7 @@
     <main>
       <div id="news">
         <div class="container">
-          <div class="visual">
+          <div class="visual" id="none">
             <div class="picture">
               <img src="./resources/images/information-main.jpg" alt="A man reads a book"/>
             </div>
@@ -67,8 +76,9 @@
             <div class="item">
               <div class="aside">
                 <div class="image">
-                <img src="./resources/images/information-orientation.jpg" alt="Students walking from birds view"/>
-                </div>
+                  <img class="desk" src="./resources/images/information-orientation.jpg" alt="Students walking from the birds-view"/>
+                  <img class="lob" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking from the birds-view" />
+                 </div>
                 <div class="column">
                   <h4>Orientation date</h4>
                   <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -77,7 +87,8 @@
               </div>
               <div class="aside">
                 <div class="image">
-                   <img src="./resources/images/information-campus.jpg" alt="Univesrity Campus"/>
+                   <img class="desk" src="./resources/images/information-campus.jpg" alt="Univesrity Campus"/>
+                   <img class="mob" src="./resources/images/information-campus-mobile.jpg" alt="Univesrity Campus"/>
                 </div>
                 <div class="column">
                   <h4>Our campus</h4>
@@ -87,7 +98,8 @@
               </div>
               <div class="aside">
                 <div class="image">
-                   <img src="./resources/images/information-guest-lecture.jpg" alt="Portrait of guest lecutrer"/>
+                   <img class="desk" src="./resources/images/information-guest-lecture.jpg" alt="Portrait of guest lecutrer"/>
+                   <img class="mob" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Portrait of guest lecutrer"/>
                 </div>
                 <div class="column">
                   <h4>Our guest lecture</h4>

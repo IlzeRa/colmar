@@ -207,7 +207,6 @@ nav a{
   color: 	rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
-
   transition: all 200ms linear 200ms;
 }
 
@@ -218,6 +217,28 @@ nav a:visited{
 nav a:hover{
 color: rgb(152, 123, 51);
 border-bottom: 0.2rem solid rgb(152, 123, 51);
+}
+
+#mobile{
+  display: none;
+}
+
+@media only screen and (max-width:580px){
+  #mobile{
+    display: block;
+  }
+
+  #desktop{
+    display: none;
+  }
+
+  #mobile ul{
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
 }
 
 /*Main banner*/
@@ -294,6 +315,7 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
   align-items: center;
   justify-content: center;
 }
+
   #banner .visual{
     width: 100%;
     height: auto;
@@ -314,6 +336,45 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
   justify-content: center;
   text-align: center;
 }
+}
+
+@media only screen and (max-width: 685px){
+  #banner .btn{
+    width: 45.666vw;
+    height: 1.89rem;
+}
+@media only screen and (max-width: 580px){
+  #banner .text{
+    position: static;
+    margin: 1.778rem 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #banner .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #banner .size{
+    width: 100%;
+  }
+
+  #banner h1{
+    font-size: 1.778rem;
+    margin:0 0.889rem;
+  }
+
+  #banner h4{
+    margin-bottom: 0 0.889rem 1.333rem 0.889rem;
+    font-size: 1rem;
+  }
+
+  #banner a{
+    font-size:0.889rem;
+  }
 }
 
 /*Main section*/
@@ -350,6 +411,10 @@ main{
   display: flex;
 }
 
+#news .mob{
+  display: none;
+}
+
 @media only screen and (max-width: 1024px){
   #news .image{
     display:flex;
@@ -359,8 +424,73 @@ main{
   #news p{
     font-size: 1.8vw;
   }
+
+  #news .mob{
+    display: none;
+  }
 }
 
+@media only screen and (max-width: 580px){
+#none{
+  display: none;
+}
+
+#news .desk{
+  display: none;
+}
+
+#news .mob{
+  width: 100%;
+  height: auto;
+
+  }
+
+#news .item{
+  margin:0;
+}
+#news .text{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+#news .aside{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex:1;
+  padding:0;
+
+}
+#news .column{
+  padding-bottom: 1rem;
+}
+
+#news h4{
+  font-size: 1.8rem;
+}
+
+#news p{
+ font-size: 1.2rem;
+}
+
+#news a{
+  font-size: 0.88rem;
+}
+
+#news .image{
+  width: 100%;
+  height: auto;
+  flex:2;
+}
+}
+
+
+.image{
+  margin: 0.889rem;
+  width: 35%;
+  height: auto;
+}
 /*Learning sub-section*/
 #info{
   width: 100%;

@@ -411,9 +411,10 @@ main{
   display: flex;
 }
 
-#news .mob{
+#news .image .mob {
   display: none;
 }
+
 
 @media only screen and (max-width: 1024px){
   #news .image{
@@ -425,7 +426,7 @@ main{
     font-size: 1.8vw;
   }
 
-  #news .mob{
+  #news .image .mob {
     display: none;
   }
 }
@@ -439,15 +440,15 @@ main{
   display: none;
 }
 
-#news .mob{
-  width: 100%;
-  height: auto;
-
+#news .mob img{
+  display:block;
+  max-width: 100%;
   }
 
 #news .item{
   margin:0;
 }
+
 #news .text{
   width: 100%;
   display: flex;
@@ -460,8 +461,8 @@ main{
   width: 100%;
   flex:1;
   padding:0;
-
 }
+
 #news .column{
   padding-bottom: 1rem;
 }
@@ -479,9 +480,11 @@ main{
 }
 
 #news .image{
-  width: 100%;
-  height: auto;
-  flex:2;
+  width: 90%;
+  height:auto;
+  overflow: hidden;
+
+
 }
 }
 

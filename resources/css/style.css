@@ -426,7 +426,7 @@ main{
     font-size: 1.8vw;
   }
 
-  #news .image .mob {
+  #news .image .mob{
     display: none;
   }
 }
@@ -436,11 +436,11 @@ main{
   display: none;
 }
 
-#news .desk{
+ .image .desk{
   display: none;
 }
 
-#news .mob img{
+#news .image .mob img{
   display:block;
   max-width: 100%;
   }
@@ -450,7 +450,7 @@ main{
 }
 
 #news .text{
-  width: 100%;
+  width: 580px;
   display: flex;
   align-items: flex-start;
 }
@@ -462,6 +462,13 @@ main{
   flex:1;
   padding:0;
 }
+
+#news .image{
+  width: 90%;
+  height:auto;
+  overflow: hidden;
+  display: flex;
+  }
 
 #news .column{
   padding-bottom: 1rem;
@@ -478,22 +485,9 @@ main{
 #news a{
   font-size: 0.88rem;
 }
-
-#news .image{
-  width: 90%;
-  height:auto;
-  overflow: hidden;
-
-
-}
 }
 
 
-.image{
-  margin: 0.889rem;
-  width: 35%;
-  height: auto;
-}
 /*Learning sub-section*/
 #info{
   width: 100%;

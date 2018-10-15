@@ -293,7 +293,7 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
 }
 
 #banner .btn a:hover{
-  font-size: 1.3rem;
+  font-size: 1.22vw;
 }
 
 #banner .tablet{
@@ -340,7 +340,7 @@ border-bottom: 0.2rem solid rgb(152, 123, 51);
 
 @media only screen and (max-width: 685px){
   #banner .btn{
-    width: 45.666vw;
+    width: 51.666vw;
     height: 1.89rem;
 }
 }
@@ -528,7 +528,6 @@ main{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-
 }
 
 .row{
@@ -695,6 +694,10 @@ main{
   #thesis h4{
     margin-bottom: 0;
   }
+
+  #thesis p{
+    padding-top:0.27rem;
+  }
 }
 
 @media only screen and (max-width: 580px){
@@ -761,5 +764,16 @@ footer .tablet{
 
   footer .desktop{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 580px){
+  footer .icons,
+  footer .terms{
+    display: none;
+  }
+
+  footer p{
+    font-size: 3.72vw;
   }
 }

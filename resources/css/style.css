@@ -193,6 +193,28 @@ img{
   height: auto;
 }
 
+@media only screen and (min-width: 1920px){
+  .logo img{
+    width: 2.2rem;
+    height: 2.5rem;
+    }
+  }
+
+@media only screen and (min-width: 1440px){
+  .logo img{
+    width: 1.94rem;
+    height:2.22rem;
+    }
+
+  .logo p{
+    font-size: 1.6rem;
+  }
+  .logo a{
+    font-size: 1.6rem;
+  }
+
+}
+
 @media only screen and (max-width: 768px){
   a{
     font-size: 2vw;
@@ -789,7 +811,7 @@ main{
     text-decoration: none;
     color:  rgb(0, 0, 0);
 }
-  
+
 .course a:visited{
   color: rgb(0, 0, 0);
 }

@@ -47,7 +47,7 @@ p{
 }
 
 a{
-  font-size: calc(2vw - 0.5vw);
+  font-size: 1.6vw;
   line-height: 1.4;
 }
 
@@ -212,7 +212,6 @@ img{
   .logo a{
     font-size: 1.6rem;
   }
-
 }
 
 @media only screen and (max-width: 768px){
@@ -262,7 +261,7 @@ nav{
 
 .logo img{
   display: block;
-  width: 100%;
+  max-width: 27px;
   }
 
 .logo p{
